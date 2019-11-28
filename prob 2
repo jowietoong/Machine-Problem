@@ -1,0 +1,7 @@
+#Problem 2
+x1 = input ('x axis of first point: ')
+y1 = input ('y axis of first point: ')
+x2 = input ('x axis of second point: ')
+y2 = input ('y axis of second point: ')
+x3 = input ('x axis of third point: ')
+y3 = input ('y axis of third point: ')
