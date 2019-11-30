@@ -14,7 +14,11 @@ for i in range(0,100):
     y.append(fct(i))
     
 plt.plot(x,y)
+plt.title('Graph of Function')
+plt.xlabel('X Axis') 
+plt.ylabel('Y Axis')
 plt.show()
+
     
 
 
