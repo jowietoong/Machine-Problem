@@ -1,0 +1,21 @@
+from math import pi
+
+def x(n):
+    return sin((3*pi*n)/100)
+    
+def y(n):
+    if n == 0:
+        return -1.5*x(n) + 2*x(n+1) - 0.5*x(n+2)
+    elif 0 < n and n <= 198:
+        return  0.5*x(n+1) - 0.5*x(n-1)
+    else:
+        return 1.5*x(n) - 2*x(n-1) + 0.5*x(n-2)
+    
+n1 = list(range(200))
+x1 = [x(n) for n in n1] 
+y1 = [y(n) for n in n1]
+    
+plt.plot(n1,x1, label='x(n)')
+plt.plot(n1,y1, label='y(n)')
+plt.legend
+plt.show  
